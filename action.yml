@@ -1,0 +1,9 @@
+name: 'yamllint action'
+description: 'Run yamllint'
+inputs:
+  config:
+    description: 'Custom configuration (as YAML source)'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
