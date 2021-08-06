@@ -7,5 +7,16 @@ updates:
     schedule:
       interval: daily
     reviewers:
-      - asenci
-      - NoodlesNZ
+      - drugscom/ops
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+    reviewers:
+      - drugscom/ops
+  - package-ecosystem: pip
+    directory: /entrypoint
+    schedule:
+      interval: daily
+    reviewers:
+      - drugscom/ops
