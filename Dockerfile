@@ -1,4 +1,4 @@
-FROM python:3.10.0-alpine3.14 as build
+FROM python:3.10.1-alpine3.15 as build
 
 RUN python3 -m venv /entrypoint
 
@@ -6,7 +6,7 @@ COPY entrypoint /src
 RUN /entrypoint/bin/pip install /src
 
 
-FROM python:3.10.0-alpine3.14
+FROM python:3.10.1-alpine3.15
 
 LABEL 'com.github.actions.name'='yamllint action'
 LABEL 'com.github.actions.description'='Run yamllint'
